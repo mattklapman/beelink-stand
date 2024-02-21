@@ -9,4 +9,8 @@ Printed with a 0.4mm nozzle at 0.2mm/layer with 25% infill and support material.
 
 ![Beelink Mini S12 Pro PC sitting on the black PETG printed stand](beelink-stand.jpg?raw=true "Black PETG stand with Beelink Mini S12 Pro PC")
 
+Note that there is the ability to print a double stand (commented out in the code).
+
+See `beelink_stand_double.3mf` for ready-to-print model. 
+
 The OpenSCAD code leverages the BOSL library: https://github.com/revarbat/BOSL
