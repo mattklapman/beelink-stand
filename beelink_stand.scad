@@ -40,5 +40,24 @@ module stand()
     }
 }
 
+module n100()
+{
+    color("blue") translate([0, 0, bottomAirGap + (miniWidth - clearance)/2]) cuboid([miniHeight - clearance, miniLength - clearance, miniWidth - clearance], center=true, fillet=6, edges=EDGES_X_ALL);
+}
+
 stand();
-color("blue") translate([0, 0, bottomAirGap + (miniWidth - clearance)/2]) cuboid([miniHeight - clearance, miniLength - clearance, miniWidth - clearance], center=true, fillet=6, edges=EDGES_X_ALL);
+n100();
+
+/*
+translate([-1.375*miniHeight, 0, 0])
+{
+    stand();
+    n100();
+}
+
+translate([ 1.375*minHeight, 0, 0])
+{
+    stand();
+    n100();
+}
+*/
